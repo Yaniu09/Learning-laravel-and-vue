@@ -11,7 +11,38 @@
   <body>
 
     <div class="container">
-      <img src="https://source.unsplash.com/random" class="img-thumbnail" alt="unsplash image">
+      <div class="row">
+        <div class="col-md-12 mt-4 mb-3">
+            <div class="card text-left">
+              @if (request()->has('src'))
+                <img src="{{ request()->src }}" class="card-img-top" alt="image not foun">  
+              @else
+                <img src="https://source.unsplash.com/random" class="card-img-top" alt="image not foun">
+              @endif  
+              <div class="card-body">
+                <h4 class="card-title">Maldives - Oceans and Seas; Riding waves</h4>
+                <p class="card-text">Body</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <div class="card text-left">
+              @if (request()->has('src'))
+                <img src="{{ request()->src }}" class="card-img-top" alt="image not foun">  
+              @else
+                <img src="https://source.unsplash.com/random" class="card-img-top" alt="image not foun">
+              @endif  
+              <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Body</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <div>
+     
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -23,7 +54,7 @@
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(showPosition);
         } else { 
-            console.log("Geolocation is not supported by this browser.");
+          console.log("Geolocation is not supported by this browser.");
         }
       });
 
