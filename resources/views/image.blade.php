@@ -19,7 +19,7 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
+              </li> 
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -32,11 +32,7 @@
       <div class="row">
         <div class="col-md-12 mt-4 mb-3">
             <div class="card text-left">
-              @if (request()->has('src'))
-                <img src="{{ request()->src }}" class="card-img-top" alt="image not foun">  
-              @else
-                <img src="https://source.unsplash.com/random" class="card-img-top" alt="image not foun">
-              @endif  
+                <img src="/a.jpg" class="card-img-top" alt="image not found">    
               <div class="card-body">
                 <h4 class="card-title">Maldives - Oceans and Seas; Riding wavesteam</h4>
                 <p class="card-text minimize">
@@ -52,11 +48,7 @@
         </div>
         <div class="col-md-12 mb-3">
             <div class="card text-left">
-              @if (request()->has('src'))
-                <img src="{{ request()->src }}" class="card-img-top" alt="image not foun">  
-              @else
-                <img src="https://source.unsplash.com/random" class="card-img-top" alt="image not foun">
-              @endif  
+                <img src="/b.jpg" class="card-img-top" alt="image not found">
               <div class="card-body">
                 <h4 class="card-title">Maldives; a wondrous archipelago</h4>
                 <p class="card-text minimize">
@@ -76,6 +68,53 @@
      
       </div>
     </div>
+
+
+    <!--Footer-->
+<footer class="page-footer indigo center-on-small-only pt-0">
+    
+        <!--Footer Links-->
+        <div class="container">
+    
+            <!--First row-->
+            <div class="row">
+    
+                <!--First column-->
+                <div class="col-md-12">
+    
+                    <div class="footer-socials mb-5 flex-center">
+    
+                        <!--Facebook-->
+                        <a class="icons-sm fb-ic"><i class="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
+                        <!--Twitter-->
+                        <a class="icons-sm tw-ic"><i class="fa fa-twitter fa-lg white-text mr-md-4"> </i></a>
+                        <!--Google +-->
+                        <a class="icons-sm gplus-ic"><i class="fa fa-google-plus fa-lg white-text mr-md-4"> </i></a>
+                        <!--Linkedin-->
+                        <a class="icons-sm li-ic"><i class="fa fa-linkedin fa-lg white-text mr-md-4"> </i></a>
+                        <!--Instagram-->
+                        <a class="icons-sm ins-ic"><i class="fa fa-instagram fa-lg white-text mr-md-4"> </i></a>
+                        <!--Pinterest-->
+                        <a class="icons-sm pin-ic"><i class="fa fa-pinterest fa-lg white-text"> </i></a>
+                    </div>
+                </div>
+                <!--/First column-->
+            </div>
+            <!--/First row-->
+        </div>
+        <!--/Footer Links-->
+    
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <center><div class="container-fluid">
+                © 2018 Copyright: Mohamed </a>
+            </div></center>
+        </div>
+        <!--/Copyright-->
+    
+    </footer>
+    <!--/Footer-->
+                    
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
